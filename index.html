@@ -22,7 +22,13 @@
 <body>
   <div class="content">
     <div class="image">
-      <img src="images/image-product-mobile.jpg" alt="perfume icon">
+      <picture>
+  <!-- Desktop image -->
+  <source srcset="images/image-product-desktop.jpg" media="(min-width: 768px)">
+  
+  <!-- Mobile image (default fallback) -->
+  <img src="images/image-product-mobile.jpg" alt="Product image">
+</picture>
     </div>
     <div class="content-text">
       <p class="product-type">PERFUME</p>
