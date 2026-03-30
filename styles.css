@@ -35,8 +35,8 @@ img {
 }
 .product-type {
     color: #80838a;
-    font-family: Montserrat;
-    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-size:  0.875rem;
     letter-spacing: 0.35rem;
     line-height: 1.7rem;
     padding-left: 1.6rem;
@@ -44,7 +44,7 @@ img {
 }
 .product-name {
     padding-left: 1.6rem;
-    font-family: Fraunces;
+    font-family: Fraunces, sans-serif;
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 2.2rem;
@@ -52,7 +52,7 @@ img {
     color: #070e16;
 }
 .product-description {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-size: 1rem;
     color: #8c8b91;
@@ -75,11 +75,16 @@ button {
     font-weight: 700;
     color: white;
     background-color: #3d8168;
+    transition: 1.5s;
 }
 button:hover {
     background-color: #1a4031;
     cursor: pointer;
-    transition: 1.5s;
+}
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
 }
 button > img {
   width: 1.3rem;
@@ -105,7 +110,7 @@ button > img {
     font-size: 0.85rem;
     display: inline-block;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     display: flex;
     align-items: center;
